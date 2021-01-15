@@ -8,7 +8,7 @@ const mysqlConnection = mysql.createConnection({
   multipleStatements: true
 });
 
-mysqlConnection.connect((err) => (err) ? setTimeout(handleDisconnect, 2000): console.log('db is connected'));
+mysqlConnection.connect((err) => (err) ? setTimeout(handleDisconnect(), 2000): console.log('db is connected'));
 mysqlConnection.on('error', function(err) {
     console.log('db error', err);
     if(err.code === 'PROTOCOL_CONNECTION_LOST') { 
