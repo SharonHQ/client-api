@@ -4,7 +4,7 @@ const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
 /* Settings */
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 // Extended: https://swagger.io/specification/#infoObject
 const swaggerOptions = {
